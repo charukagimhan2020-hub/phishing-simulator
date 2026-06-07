@@ -83,6 +83,12 @@ Includes a simulated browser address bar showing suspicious domains, misleading 
 
 ---
 
+### Live Demo Link
+
+https://phishing-simulator-three.vercel.app/
+
+---
+
 # 🚩 Phishing Indicators Covered
 
 | Indicator | Description |
