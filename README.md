@@ -1,81 +1,257 @@
-# 🎣 Phishing Simulator
+# 🎣 Phishing Awareness Simulator
 
-> **⚠ EDUCATIONAL USE ONLY -Runs 100% in the browser. No credentials are transmitted or stored anywhere.**
+> **⚠ Educational Use Only**
+>
+> This project runs entirely inside the browser. No credentials are transmitted, stored, or sent to any external service.
 
-A browser-based phishing awareness tool that simulates realistic fake login pages for 15 platforms -including Google, Meta, PayPal, and major Sri Lankan banks. Built to demonstrate how credential harvesting attacks work and what red flags to look for.
+An interactive React-based cybersecurity training tool that demonstrates how phishing websites imitate legitimate services and trick users into revealing sensitive information.
 
-## 🖥️ Demo Features
+The simulator provides realistic phishing page replicas, suspicious domain analysis, credential capture demonstrations, and phishing red-flag education to help users recognize and avoid common social engineering attacks.
 
-- **15 Phishing Templates** -Gmail, YouTube, Facebook, Instagram, PayPal, Google Account, Drive, Pay, Photos, and Sri Lankan banks (Commercial Bank, Sampath, HNB, BOC, People's Bank, Nations Trust Bank)
-- **Category Filtering** -Browse by Email, Social, Finance, Google, or LK Bank
-- **Live Red Flag Panel** -Automatically cycles through 6 red flags with per-template domain analysis
-- **Credential Log** -Captures and displays fake credentials in a live table
-- **Auto Demo Mode** -Simulates a victim entering credentials automatically across templates
-- **Fake Browser Bar** -Shows the suspicious spoofed domain with a broken padlock
+---
 
-## 🚩 Red Flags Taught
+# 📖 Overview
 
-| # | Flag | Description |
-|---|------|-------------|
-| 1 | Suspicious Domain | Typosquatting, wrong TLD, subdomain tricks |
-| 2 | Urgency / Fear Tactics | Pressure to act fast without thinking |
-| 3 | Credential Harvesting Form | Identical UI, data goes to attacker |
-| 4 | HTTPS ≠ Safe | Padlock only means encrypted, not legitimate |
-| 5 | Brand Spoofing | Cloned logos and colors build false trust |
-| 6 | Post-Submit Redirect | Victim redirected to real site after capture |
+Phishing remains one of the most common cyberattacks used to steal usernames, passwords, banking details, and personal information.
 
-## 🚀 Getting Started
+This simulator recreates realistic phishing scenarios using familiar websites and banking portals to demonstrate:
 
-### Prerequisites
-- Node.js 18+
-- A React project (Vite or Create React App)
+- How attackers impersonate trusted brands
+- How fake login pages collect credentials
+- How suspicious domains are used to deceive users
+- How social engineering tactics influence victim behavior
+- What warning signs users should look for before entering credentials
 
-### Usage
+All demonstrations occur locally within the browser and are intended solely for cybersecurity awareness and training purposes.
 
-1. Clone the repo:
-   git clone https://github.com/YOUR_USERNAME/phishing-simulator.git
-   cd phishing-simulator
+---
 
-2. Copy `PhishingSimulator.jsx` into your React project's `src/` folder.
+# ✨ Features
 
-3. Import and use:
-   import PhishingSimulator from './PhishingSimulator';
+### 🎭 Realistic Phishing Templates
 
-   function App() {
-     return <PhishingSimulator />;
-   }
+Includes phishing simulations based on:
 
-4. Run your dev server:
-   npm run dev
+- Gmail
+- YouTube
+- Facebook
+- Instagram
+- PayPal
+- Google Account
+- Google Drive
+- Google Pay
+- Google Photos
+- Commercial Bank
+- Sampath Bank
+- Hatton National Bank (HNB)
+- Bank of Ceylon (BOC)
+- People's Bank
+- Nations Trust Bank
 
-### Or -drop it directly into [Claude.ai Artifacts](https://claude.ai)
-Paste the JSX source into a Claude artifact -it renders instantly with no setup.
+### 📂 Category Filtering
 
-## 🏛️ Templates Included
+Browse phishing scenarios by category:
+
+- Email
+- Social Media
+- Finance
+- Google Services
+- Sri Lankan Banking
+
+### 🚩 Phishing Red Flag Detection
+
+Highlights common warning signs including:
+
+- Suspicious domains
+- Fake login pages
+- Urgency and fear tactics
+- Brand impersonation
+- Credential harvesting
+- Redirect-after-login techniques
+
+### 📊 Live Credential Capture Demonstration
+
+Demonstrates how phishing sites collect credentials by displaying entered data inside a local educational log.
+
+### 🤖 Automated Demonstration Mode
+
+Automatically simulates user interactions across multiple phishing templates for presentations, demonstrations, and awareness training sessions.
+
+### 🌐 Fake Browser Interface
+
+Includes a simulated browser address bar showing suspicious domains, misleading URLs, and phishing indicators.
+
+---
+
+# 🚩 Phishing Indicators Covered
+
+| Indicator | Description |
+|------------|------------|
+| Suspicious Domain | Typosquatting, lookalike domains, misleading subdomains |
+| Urgency Tactics | Messages designed to pressure users into immediate action |
+| Credential Harvesting | Fake login forms used to collect sensitive information |
+| HTTPS Misconceptions | Demonstrates why HTTPS alone does not guarantee legitimacy |
+| Brand Spoofing | Use of trusted logos, colors, and branding to build false trust |
+| Post-Login Redirects | Redirecting victims to legitimate websites after credential capture |
+
+---
+
+# 🎯 Learning Objectives
+
+This project helps users learn how to:
+
+- Identify phishing websites
+- Detect suspicious URLs and domains
+- Recognize social engineering tactics
+- Understand credential harvesting attacks
+- Analyze fake login pages
+- Improve personal cybersecurity awareness
+- Reduce susceptibility to phishing attacks
+
+---
+
+# 🏛️ Included Templates
 
 | Category | Platforms |
-|----------|-----------|
+|-----------|-----------|
 | Email | Gmail |
-| Social | YouTube, Facebook, Instagram |
+| Social Media | YouTube, Facebook, Instagram |
 | Finance | PayPal |
-| Google | Google Account, Google Drive, Google Pay, Google Photos |
-| LK Bank | Commercial Bank of Ceylon, Sampath Bank, HNB, Bank of Ceylon, People's Bank, Nations Trust Bank |
-
-## ⚙️ Tech Stack
-
-- **React** (functional components + hooks)
-- **Pure CSS-in-JS** (injected via `<style>` tag -no external CSS needed)
-- **Google Fonts** -Space Mono + Bangers
-- **No backend, no database, no network requests**
+| Google Services | Google Account, Google Drive, Google Pay, Google Photos |
+| Sri Lankan Banking | Commercial Bank, Sampath Bank, HNB, Bank of Ceylon, People's Bank, Nations Trust Bank |
 
 ---
 
-## ⚠️ Disclaimer
+# ⚙️ Technology Stack
 
-This project is strictly for **cybersecurity education and awareness training**. It does not transmit, store, or exfiltrate any data. All "captured" credentials exist only in browser memory and are cleared on refresh. Do not use this tool to deceive or mislead real users. The author is not responsible for any misuse.
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- React Hooks
+- CSS-in-JS Styling
+- Google Fonts
+
+### No Backend Required
+
+- No Database
+- No APIs
+- No External Network Requests
+- No Credential Storage
+- Runs Completely Client-Side
 
 ---
 
-## 📄 License
+# 🚀 Installation
 
-MIT -free to use for educational, academic, and awareness training purposes.
+## Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/phishing-awareness-simulator.git
+cd phishing-awareness-simulator
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Development Server
+
+```bash
+npm start
+```
+
+## Create Production Build
+
+```bash
+npm run build
+```
+
+---
+
+# 📸 Screenshots
+
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Phishing Simulation
+
+![Simulation](screenshots/simulation.png)
+
+### Credential Capture Demonstration
+
+![Credentials](screenshots/credentials.png)
+
+### Red Flag Analysis
+
+![Analysis](screenshots/analysis.png)
+
+---
+
+# 🎓 Example Use Cases
+
+- Cybersecurity Awareness Training
+- University Security Demonstrations
+- Information Security Coursework
+- Phishing Education Workshops
+- Security Awareness Campaigns
+- Ethical Hacking Presentations
+- Employee Security Training
+
+---
+
+# 📂 Project Structure
+
+```text
+phishing-awareness-simulator/
+│
+├── public/
+│
+├── src/
+│   ├── App.js
+│   ├── index.js
+│   └── PhishingSimulator.jsx
+│
+├── screenshots/
+│   ├── dashboard.png
+│   ├── simulation.png
+│   ├── credentials.png
+│   └── analysis.png
+│
+├── .gitignore
+├── LICENSE
+├── README.md
+├── package.json
+└── package-lock.json
+```
+
+---
+
+# ⚠ Disclaimer
+
+This project was developed exclusively for cybersecurity education, awareness training, and research purposes.
+
+No credentials are transmitted, stored, or shared. All captured data remains inside browser memory and is removed when the page is refreshed or closed.
+
+This project must not be used to deceive, impersonate, or collect information from real users.
+
+The author assumes no responsibility for misuse of this software.
+
+---
+
+# 👨‍💻 Author
+
+**Charuka**
+
+Cybersecurity Student | Information Security Enthusiast
+
+---
+
+# 📄 License
+
+Licensed under the MIT License.
+
+Free to use for educational, academic, and cybersecurity awareness purposes.
